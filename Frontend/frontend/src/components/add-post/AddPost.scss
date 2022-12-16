@@ -1,0 +1,50 @@
+.new-post {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+
+  h3 {
+    text-align: center;
+  }
+
+  .new-post-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .new-post-form-group {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    textarea {
+      height: 8rem;
+      width: 30rem;
+    }
+  }
+
+  input[type="file"] {
+    visibility: hidden;
+  }
+
+  .form-group {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    input {
+      width: 97%;
+    }
+  }
+
+  .button-container {
+    display: flex;
+    gap: 5px;
+    margin-top: 5px;
+  }
+
+  .add-post-tag-others {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+}

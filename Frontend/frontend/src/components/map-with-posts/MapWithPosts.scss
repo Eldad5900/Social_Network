@@ -1,0 +1,55 @@
+.wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: margin 0.5;
+  margin: 0 0 0 -143px;
+  margin-top: -280px;
+  animation: slideOut 0.5s ease;
+}
+
+.wrapper.is-nav-open {
+  margin-left: 150px;
+  animation: slideIn 0.5s ease;
+}
+
+@keyframes slideIn {
+  0% {
+    margin-left: -150px;
+  }
+  100% {
+    margin-left: 150px;
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    margin-left: 150px;
+  }
+  100% {
+    margin-left: -150px;
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 250px;
+  height: 100%;
+  padding: 20px;
+}
+
+.nav__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background-color: black;
+  color: white;
+  top: 0;
+  right: -70px;
+  padding: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}

@@ -1,0 +1,115 @@
+.post {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1.2rem;
+  background-color: #fff;
+  border-radius: 1.5rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: 100%;
+
+  .tagged-person {
+    color: blue;
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .delete-dialog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    gap: 2rem;
+
+    div {
+      display: flex;
+      gap: 1rem;
+    }
+  }
+
+  .post-date-options {
+    display: flex;
+    gap: 0.8rem;
+
+    svg {
+      cursor: pointer;
+    }
+  }
+
+  .comments {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .comment-input-wrapper {
+      margin-top: 5px;
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+
+      .comment-input {
+        width: 100%;
+        border: 0;
+        border-bottom: 1px solid black;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 16px 0px;
+        padding: 5px 0 5px 10px;
+        border-radius: 1rem;
+
+        &:focus {
+          border: 1px solid red;
+        }
+      }
+
+      button {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        color: rgb(43, 159, 197);
+        padding: 5px;
+      }
+    }
+  }
+
+  .user {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .post-content {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0.7rem 0 1rem 0.3rem;
+  }
+
+  .post-footer {
+    display: flex;
+    justify-content: space-between;
+
+    .post-footer-buttons {
+      display: flex;
+      align-items: baseline;
+      gap: 5px;
+    }
+    .post-footer-text {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    svg {
+      padding: 5px 0 0 5px;
+      font-size: 1.5rem;
+    }
+  }
+}

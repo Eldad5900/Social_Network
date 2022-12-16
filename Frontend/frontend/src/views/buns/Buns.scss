@@ -1,0 +1,51 @@
+.buns {
+  display: flex;
+  gap: 2rem;
+  height: 100%;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 0.5rem;
+}
+
+.side-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  align-items: flex-start;
+
+  .menu-option {
+    background-color: #f0f0f0;
+    color: black;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 1rem;
+    min-width: 90%;
+    justify-content: flex-start;
+
+    &:hover {
+      background-color: #e0e0e0;
+    }
+  }
+
+  .active {
+    background-color: #f5b1bc;
+    &:hover {
+      background-color: #f1a3b4;
+    }
+  }
+}

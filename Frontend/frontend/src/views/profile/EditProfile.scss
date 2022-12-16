@@ -1,0 +1,31 @@
+.edit-form {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  padding: 1rem;
+
+  img {
+    cursor: pointer;
+
+    &:hover {
+      border: 1px solid black;
+      margin: -1px;
+    }
+  }
+
+  .edit-text-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .edit-group {
+    display: flex;
+    gap: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+
+    label {
+      width: 14rem;
+    }
+  }
+}

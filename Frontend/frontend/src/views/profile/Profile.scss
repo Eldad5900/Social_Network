@@ -1,0 +1,80 @@
+.profile-header {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem 6rem 2rem 6rem;
+
+  .profile-header-details {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: 1rem;
+  }
+
+  .profile-bio {
+    width: 90%;
+    word-wrap: break-word;
+  }
+
+  .profile-props {
+    padding: 20px;
+
+    .property-group {
+      display: flex;
+      gap: 5px;
+      margin-bottom: 5px;
+
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+  }
+
+  .profile-header-top {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    height: 2rem;
+  }
+
+  .profile-header-bottom {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .button-container {
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+.profile-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.profile-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+  // width: auto;
+
+  .profile-posts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    width: 35%;
+  }
+  .profile-friends {
+    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.8rem;
+    width: 100%;
+  }
+}
